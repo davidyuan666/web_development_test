@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .banner {
+            /* The image used */
+            background-image:'dataset/town.jpg'
+        }
+    </style>
+    <h1>Heading1</h1>
+</head>
+
+<body>
+
+    <p>This is a paragraph description
+        <img src="dataset/people.jpg" alt="Girl in a jacket">
+    </p>
+
+    <a href="https://www.google.com/">click here to access google</a>
+
+    <div class="banner">
+        <div>
+        <h1>name: Happy Town</h1>
+        <h2>slogan: Welcome to the our Happy Town</h2>
+        <input id="date" type="date" /> 
+        </div>  
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="test.html">Home</a></li>
+            <li><a href="test.html">TEST</a></li>
+        </ul>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+      </ul>
+
+    </div>
+
+
+<script>
+    // add time
+    var date = new Date();
+    var currentDate = date.toISOString().slice(0,10);
+    var currentTime = date.getHours() + ':' + date.getMinutes();
+    document.getElementById('date').value = currentDate;
+
+
+</script>
+
+
+
+  </body>
+  </html>
